@@ -1,0 +1,11 @@
+# 
+# 08/31/2026 20:33:08
+# The parameters defined in the project are:
+# ,P1 - Velocityparam [m s^-1],P2 - drag-coeff-op,P3 - drag-force-op [N]
+# Leo Note: The CD was calculated with an incorrectly-updating reference, ignore P2 column
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1,P2,P3
+DP 0,10,0.51420012,0.050076664
+DP 1,20,1.9519146,0.19009208
+DP 2,30,4.2904044,0.41783176
+DP 3,35,5.8032912,0.56516803

@@ -1,0 +1,5 @@
+Parameter,Calculated,Recorded,Difference,PercentError
+Apogee (m),88.79,83.39,+5.40,6.5%
+Time to Apogee (s),4.957,4.461,+0.496,11.1%
+Maximum Velocity (m/s),34.39,35.00,-0.61,1.8%
+Burn Time (s),1.65,1.31,+0.342,26.2%
