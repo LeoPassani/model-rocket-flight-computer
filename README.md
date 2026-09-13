@@ -25,6 +25,8 @@ The **Peter Trifin** is a custom 3D-printed rocket designed in SolidWorks and po
   <em>SolidWorks design and 3D-printed Peter Trifin rocket</em>
 </p>
 
+The rocket returns safely to the ground thanks to a trashbag parachute. The holes in the bottom were epoxied shut to ensure the pressure charge from the motor would not disperse underneath the rocket and prevent the parachute from deploying.
+
 ## ESP-32 Flight Computer Design
 
 The Flight computer houses an Adafruit LSM6DSOX IMU, Adafruit BMP280 Barometer, ESP32-DEVKITC-32UE-ND, and an Adafruit MicroSD breakout board, as well as voltage protection switches and voltage regulator components that connect the 3.7V lithium-polymer battery 500mAh. At a rate of 104Hz, the IMU collects accelerations and angular velocities in the body frame of the rocket. The flight computer went through a rigorous and long prototyping process as there was some new concepts for me to learn about communication protocols, soldering, and using the arduino IDE on the esp32. While I wasn't completely new to arduino-style projects, this was a large step compared to previous high school projects. I began with breadboard tests of each sensor, ensuring that the values coming out were plausible. I used processing to live test the madgwick filter that is part of the arduino IDE library. Before I knew it, I had a live feed on the orientation of the computer, however the euler angles were limited in that a full turn would cause the model to do an additional turn in the opposite direction. This is due to roll pitch and yaw maxing at certain values and needing to remain within a certain range. I switched to quaternion based orientation to solve for this (another new concept to me!). 
